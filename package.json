@@ -1,0 +1,20 @@
+{
+  "name": "dev-it_admin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && npm run watch",
+    "client": "cd client && npm start",
+    "buildClient": "cd client && npm run build",
+    "clientInstall": "cd client&& npm install ",
+    "serverInstall": "cd server&& npm install",
+    "watch": "concurrently \"npm run client\" \"npm run server\"",
+    "installDep": "concurrently \"npm run serverInstall\"&& npm run clientInstall"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

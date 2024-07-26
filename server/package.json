@@ -1,0 +1,20 @@
+{
+  "name": "dev-it_server",
+  "version": "1.0.0",
+  "description": "devIt server",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "watch": "nodemon src/index.js"
+  },
+  "author": "Artem Zakharchuk",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
