@@ -98,7 +98,10 @@ function App() {
               sendARequest(nextResolvedRequests);
             }
           })
-          .catch(() => setError(errorMessage.loadingFail));
+          .catch(() => {
+            setError(errorMessage.loadingFail);
+            setLoading(false);
+          });
       };
 
       sendARequest();
