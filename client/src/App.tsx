@@ -116,7 +116,7 @@ function App() {
           type="number"
           onChange={(e) => setInputQuantity(+e.target.value)}
           onKeyDown={(e) => {
-            if (e.key === 'Enter') {
+            if (e.key === 'Enter' && !loading) {
               handleClick();
             }
           }}
